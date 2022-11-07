@@ -58,7 +58,7 @@
 
 <!-- About the Blog -->
 ## About Ruonas Blog
-Ruonas blog is a blog that welcomes a variety of people. from diverse backgrounds. A User can share their thoughts and ideas here and also read posst made by other users. Posts can be read by anybody that visits the blog but in order to create a post you have to sign in. User can edit and delete posts made by theem alone. deleting and editing another user's work is not permitted.
+Ruonas blog is a blog that welcomes a variety of people. from diverse backgrounds. A User can share their thoughts and ideas here and also read post made by other users. Posts can be read by anybody that visits the blog but in order to create a post you have to sign in. A User can edit and delete posts made by them alone. Deleting and editing another user's work is not permitted.
 
 Ruonas Blog was built as an exam project by <a href="https://github.com/Ruona-Ewh/">Ogheneruona Ewherido</a>, a Backend Engineering student at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a> who's learning to create magic with the Python Flask framework. 
 
