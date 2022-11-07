@@ -92,7 +92,7 @@ Creating this blog helped me learn and practice:
 * Documentation
 * Flask Forms
 * Version Control System 
-* Reading and Understandin Documentation(I can not emphasize this enough, reading documentations made my work so easy)
+* Reading and Understanding Documentation(I can not emphasize this enough, reading documentations made my work so easy)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
