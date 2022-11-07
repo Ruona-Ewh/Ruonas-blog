@@ -111,7 +111,7 @@ def delete(id):
 def edit(id):
     post = Blogpost.query.get_or_404(id)
     if post.author != current_user:
-        flash("You are not permitted to delete another user's article")
+        flash("You are not permitted to edit another user's article")
     form = PostForm()
     if form.validate_on_submit():
         post.title = form.title.data
@@ -125,9 +125,6 @@ def edit(id):
     return render_template('edit.html', title='Edit', form=form, id=post.id)
     
         
-
-
-
 @app.route("/post/new", methods=['GET', 'POST'])
 @login_required
 def new_post():
