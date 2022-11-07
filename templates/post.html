@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<a href="{{ url_for('index')}}" class="back">Back</a> 
+<article class="">
+  <div class="form-section">
+    <div class="">
+      <p>Created by &nbsp; {{ post.author.firstname }} {{ post.author.lastname }} &nbsp; on &nbsp; 
+        <small class="">{{ post.date_posted.strftime('%Y-%m-%d') }}</small></p>
+        <hr>
+    </div>
+    <h2>{{ post.title }}</h2>
+    <p class="">{{ post.article }}</p>
+    {% if current_user.is_authenticated %}
+<div>
+  <a href="{{ url_for('edit', id=post.id)}}"><input type=submit value="Edit"></a>
+  </div>
+<div>
+  <a href="{{ url_for('delete', id=post.id)}}"><input type=submit value="Delete"></a>
+  </div>
+{% else %}
+{% endif %}
+
+  </div>
+</article>
+
+{% endblock content %} 

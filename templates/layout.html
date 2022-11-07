@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruona'sBlog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="flex-container">
+        <div class="nav-1">
+            <a href="{{ url_for('index') }}">
+                    <p>Ruona<span>Blog</span></p>
+                </a>
+                <a href="{{ url_for('index') }}">
+                    <p>Home</p>
+                </a>
+                <a href="{{ url_for('contact') }}">
+                    <p>Contact</p>
+                </a>
+                <a href="{{ url_for('about') }}">
+                    <p>About</p>
+                </a>
+        </div>
+        {% if current_user.is_authenticated %}
+        <div class="nav-2">
+            <a href="{{ url_for('new_post') }}">
+                <p>Write</p>
+            </a>
+            <a href="{{ url_for('logout') }}">
+                <p class="login">Logout</p>
+            </a>
+            <span>Hi {{ current_user.firstname }} !</span>
+        </div>
+        {% else %}
+        <div class="nav-2">
+            <a href="{{ url_for('login') }}">
+                <p class="login">Login</p>
+            </a>
+            <a href="{{ url_for('signup') }}">
+                <p class="sign-up">Sign Up</p>
+            </a>
+        {% endif %}
+        </div>
+    </nav>
+    <div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+/* styling for layout goes here */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* styling for contact form */
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+  input[type=email] {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+  .centre {
+    text-align: center;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .submit {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: default;
+    
+   
+  }
+  
+  .submit:hover {
+    background-color: #808080;
+  }
+
+  /*styling for login page*/
+  .heading{
+    text-align: center;
+  }
+
+  .form-cont{
+    width: 70%;
+    margin: auto;
+  }
+  .email{
+    width: 70%;
+    
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* styling for homepage */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #131a1c;
+    padding: 1rem;
+    
+}
+
+.nav-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+}
+
+
+.nav-2{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  
+}
+    
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    margin-right: 2rem;
+}
+span{
+    color: aqua;
+}
+
+.nav-2 a .sign-up{
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    background: aqua;
+    color: #131a1c;
+}
+
+.nav-2 a .login{
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: white;
+    
+}
+
+/* styling for back button */
+.back {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+/* styling for sign up page */
+.form-section{
+  border-radius: 10px;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: #f2f2f2;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+/* styling for about page */
+.about{ 
+  border-radius: 5px;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  background-color: #f2f2f2;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  text-align: center;
+  
+
+}
+
+/* styling for flash messages */
+.flashes {
+text-align: center;
+list-style: none;
+width: 30%;
+border: 3px black;
+padding: 15px;
+margin: 2px;
+background-color: #808080;
+}
+
+/* styling for post creation */
+.create-post {
+  text-align: center;
+}
+
+.post-button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.text-color {
+  color: black;
+}
+
+.form-sect {
+  border-radius: 10px;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: #f2f2f2;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+
+}
+
+.sign-up{
+  text-align: center;
+}

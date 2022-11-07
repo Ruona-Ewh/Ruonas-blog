@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-sect">
+    <form method="POST" action="">
+        <div class="form-cont">
+         {{ form.hidden_tag() }}
+            <h1 class="heading">Login<h1>
+            <div class="email">
+                <h6>{{ form.email.label() }}</h6>
+                {{ form.email() }}
+            </div>
+            <div>
+                <h6>{{ form.password.label() }}</h6>
+                {{ form.password() }}
+            </div>
+            <div>
+                <button class="post-button">Login</button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+        <small>
+            <p class="sign-up">Don't Have An Account?<a href="{{ url_for('signup') }}"><span>Sign Up</span>></a></p>
+        </small>
+</div>
+{% endblock content %} 

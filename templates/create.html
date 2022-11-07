@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-section">
+    <form method="POST" action="">
+        <div class="">
+         {{ form.hidden_tag() }}
+            <h1 class="create-post">Create Post<h1>
+            <div class="">
+                <h6>{{ form.title.label(class="create-inout") }}</h6>
+                {{ form.title() }}
+            </div>
+            <div>
+                <h6>{{ form.article.label() }}</h6>
+                {{ form.article() }}
+            </div>
+            <div>
+                <button class="post-button">Post</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
